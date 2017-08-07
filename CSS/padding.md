@@ -97,3 +97,91 @@ span {
 
 - 应用场景 图片需要控制尺寸并且要根据设备宽度变化但宽高比保存不变，也可以做一个响应式的盒子
 
+
+### 绘图
+
+```css
+.box {
+  box-sizing: content-box;
+  width: 150px;
+  height: 30px;
+  padding: 30px 0;
+  border-top: 30px solid #000;
+  background-color: #000;
+  background-clip: content-box;
+  border-bottom: 30px solid #000;
+}
+
+.box2 {
+  box-sizing: content-box;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #000;
+  background-clip: content-box;
+  border: 10px solid #000;
+  padding: 10px;
+}
+```
+
+- 主要通过`background-clip:content-box`定义背景色的范围，`border`和`content-box`来绘制颜色，而`padding`只可以绘制白色区域。
+
+
+
+
+
+### 等高布局
+
+```html
+<div class="box">
+  <div class="son-green">
+    <div>文字</div>
+    <div>文字</div>
+  </div>
+  <div class="son-orange">
+    <div>文字</div>
+    <div>文字</div>
+    <div>文字</div>
+    <div>文字</div>
+    <div>文字</div>
+    <div>文字</div>
+    <div>文字</div>
+    <div>文字</div>
+    <div>文字</div>
+    <div>文字</div>
+  </div>
+</div>
+```
+
+```css
+/*核心父元素bfc 产出结界  */
+.box {
+  overflow: hidden;
+  text-align: center;
+}
+
+/*padding-bottom 为填充颜色，再margin-bottom减去填充色  */
+.son-green,
+.son-orange {
+  margin-bottom: -600px;
+  padding-bottom: 600px;
+}
+
+.son-green {
+  float: left;
+  width: 50%;
+  font-size: 60px;
+  color: #fff;
+  background-color: green;
+}
+
+.son-orange {
+  float: left;
+  width: 50%;
+  font-size: 60px;
+  color: #fff;
+  background-color: orange;
+}
+```
+
+- 核心`bfc` `padding-bottom `做填充和`margin-bottom`负值减去填充。 
