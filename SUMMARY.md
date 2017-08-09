@@ -6,6 +6,7 @@
     * [padding](CSS/padding.md)
     * [margin](CSS/margin.md)
     * [overflow](CSS/overflow.md)
+    * [float](CSS/float.md)
 * [JavaScript](JavaScript/README.md)
 
 
