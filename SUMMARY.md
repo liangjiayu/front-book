@@ -8,6 +8,7 @@
     * [overflow](CSS/overflow.md)
     * [float](CSS/float.md)
     * [relative](CSS/relative.md)
+    * [z-index](CSS/z-index.md)
 * [JavaScript](JavaScript/README.md)
 
 
