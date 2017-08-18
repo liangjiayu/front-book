@@ -92,3 +92,75 @@
 ### 层叠顺序
 
 ![z-index](../images/z-index.png)
+
+```css
+/*背景  */
+.box {
+  font-size: 24px;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+}
+
+/*z-index:-1  */
+.item01 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  background-color: pink;
+}
+
+/*block  */
+.item02 {
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+}
+
+/*浮动  */
+.item03 {
+  margin-top: -35px;
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+
+/*inline  */
+.item04 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+
+/*正数  */
+.item05 {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background-color: red;
+}
+```
+
+```html
+<div class="box">背景色
+  <div class="item01">负数</div>
+  <div class="item02">block</div>
+  <div class="item03">float</div>
+  <div class="item04">inline</div>
+  <div class="item05">正数</div>
+</div>
+```
+
+![img01](../images/img01.png)
+
+#### z-index与层叠上下文
+
+- 定位元素的`index` 默认为`auto`  `auto`可以看成0 所以定位元素在普通元素上面
+- `z-index`为数值是会创建新的层叠上下文，里面的元素遵循7阶原则
+- `z-index`的层叠顺序要看父元素的层叠上下文的顺序
