@@ -9,6 +9,9 @@
     * [float](CSS/float.md)
     * [relative](CSS/relative.md)
     * [z-index](CSS/z-index.md)
+    * [line-height](CSS/line-height.md)
+    * [inline](CSS/inline.md)
+    * [background](CSS/background.md)
 * [JavaScript](JavaScript/README.md)
 
 
