@@ -6,6 +6,7 @@
     * [padding](CSS/padding.md)
     * [margin](CSS/margin.md)
     * [overflow](CSS/overflow.md)
+    * [border](CSS/border.md)
     * [float](CSS/float.md)
     * [relative](CSS/relative.md)
     * [z-index](CSS/z-index.md)
