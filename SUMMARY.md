@@ -13,6 +13,8 @@
     * [line-height](CSS/line-height.md)
     * [inline](CSS/inline.md)
     * [background](CSS/background.md)
+    * [vertical-align](CSS/vertical-align.md)
+    * [文本溢出](CSS/文本溢出.md)
 * [JavaScript](JavaScript/README.md)
 
 
