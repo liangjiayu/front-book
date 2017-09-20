@@ -1,6 +1,6 @@
 ## canvas api
 
-#### canvas 标签
+### canvas 标签
 
 ```html
 <canvas id="canvas" width="500" height="500"></canvas>
@@ -8,7 +8,7 @@
 
 要在整个页面dom结构加载完成后才对`canvas`标签进行编程，画布的坐标系统为左上角为原点，向右向下延伸
 
-**基础的绘画结构**
+#### 基础的绘画结构
 
 ```javascript
 function canvasApp() {
@@ -22,6 +22,8 @@ function canvasApp() {
 canvasApp()
 ```
 
+
+
 #### 路径API 
 
 `ctx.beginPath()`
@@ -32,6 +34,14 @@ canvasApp()
 
 关闭当前路径，并把首尾的路径闭合
 
+`ctx.save()`
+
+保存canvas绘图环境，就是保存画笔
+
+`ctx.restore()`
+
+还原之前保存的画笔状态
+
 `ctx.stroke()`
 
 绘制当前路径，如果没有关闭路径会默认关闭路径
@@ -40,7 +50,9 @@ canvasApp()
 
 设置画笔的样式
 
-##### 线段
+
+
+#### 线段
 
 `ctx.lineWidth`
 
@@ -60,7 +72,7 @@ canvasApp()
 
 
 
-##### 绘制文本
+#### 绘制文本
 
 `ctx.fillText(text,x,y,[max-width])`
 
@@ -85,6 +97,25 @@ canvasApp()
 文本基线对齐设置
 
 
+
+#### 圆弧和圆
+
+`ctx.arc(x,y,r,startRad,endRad,方向)`
+
+圆心 半径 开始的圆弧(开始的坐标) 结束的圆弧(结束的坐标) 方向 `false`为顺时针 `true`为逆时针 
+
+**封装的圆弧函数**
+
+```javascript
+function getRads(deg) {
+  return (Math.PI*deg)/180;
+}
+function draw() {
+  ctx.beginPath();
+  ctx.arc(100,100,20,0,getRads(90),false);
+  ctx.stroke();
+}
+```
 
 
 
