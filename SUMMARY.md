@@ -21,4 +21,6 @@
     - [web-api](JavaScript/web-api.md)
 * [VUE](VUE/REMDME.md)
     - [transition](VUE/transition.md)
-
+* [ES6]()
+    - [async](ES6/async.md)
+    - [promise](ES6/promise.md)
