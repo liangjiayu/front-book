@@ -21,6 +21,8 @@
     - [web-api](JavaScript/web-api.md)
 * [VUE](VUE/REMDME.md)
     - [transition](VUE/transition.md)
+    - [vue打包](VUE/vue打包路径.md)
+    - [vue爬坑](VUE/vue爬坑.md)
 * [ES6]()
     - [async](ES6/async.md)
     - [promise](ES6/promise.md)
