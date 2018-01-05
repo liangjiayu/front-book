@@ -26,3 +26,5 @@
 * [ES6]()
     - [async](ES6/async.md)
     - [promise](ES6/promise.md)
+* [plug]()
+    - [video](plug/video.md)
