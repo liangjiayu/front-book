@@ -3,6 +3,7 @@
 * [本书介绍](README.md)
 * [HTML](HTML/README.md)
     - [canvas-api](HTML/canvas-api.md)
+    - [class命名](HTML/class命名.md)
 * [CSS](CSS/README.md)
     * [padding](CSS/padding.md)
     * [margin](CSS/margin.md)
