@@ -30,4 +30,5 @@
 * [plug]()
     - [video](plug/video.md)
     - [iscroll](plug/iscroll.md)
+    - [sliderPro](plug/sliderPro.md)
 
