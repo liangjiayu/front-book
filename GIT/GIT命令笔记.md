@@ -188,11 +188,20 @@ $ git branch -dr [remote/branch]
 # 恢复暂存区的所有文件到工作区
 $ git checkout .
 
+# 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变 ***
+# 用途 撤销无用 commit 但工作区不变，
+$ git reset [commit] [HEAD~5]
+
+# 以下两个操作都用比较大的影响，撤销 commit 并且改变工作区
 # 重置暂存区与工作区，与上一次commit保持一致
 $ git reset --hard
 
 # 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致
 $ git reset --hard [commit]
+
+# 新建一个commit，用来撤销指定commit ***
+# 后者的所有变化都将被前者抵消，并且应用到当前分支
+$ git revert [commit]
 
 ```
 
