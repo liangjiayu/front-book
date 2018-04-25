@@ -20,6 +20,7 @@
     * [文本溢出](CSS/文本溢出.md)
 * [JavaScript](JavaScript/README.md)
     - [web-api](JavaScript/web-api.md)
+    - [日常笔记](JavaScript/日常笔记.md)
 * [VUE](VUE/REMDME.md)
     - [transition](VUE/transition.md)
     - [vue打包](VUE/vue打包路径.md)
@@ -32,5 +33,10 @@
     - [iscroll](plug/iscroll.md)
     - [sliderPro](plug/sliderPro.md)
 * [GIT]()
-    - [学习地址](GIT/学习地址.md)
+    - [相关资料](GIT/相关资料.md)
+    - [GIT命令笔记](GIT/GIT命令笔记.md)
+    - [GIT最佳实践](GIT/GIT最佳实践.md)
+* [饥人谷笔记]()
+    - [自我修养.md](饥人谷笔记/自我修养.md)
+
 
