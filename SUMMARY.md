@@ -32,10 +32,14 @@
     - [video](plug/video.md)
     - [iscroll](plug/iscroll.md)
     - [sliderPro](plug/sliderPro.md)
-* [GIT]()
-    - [相关资料](GIT/相关资料.md)
-    - [GIT命令笔记](GIT/GIT命令笔记.md)
-    - [GIT最佳实践](GIT/GIT最佳实践.md)
+* [工具]()
+    - [sublime](工具/sublime.md)
+    - [vscode](工具/vscode.md)
+    - [GIT相关资料](工具/GIT相关资料.md)
+    - [GIT命令笔记](工具/GIT命令笔记.md)
+    - [GIT最佳实践](工具/GIT最佳实践.md)
+
+
 * [饥人谷笔记]()
     - [自我修养.md](饥人谷笔记/自我修养.md)
 
